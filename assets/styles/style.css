@@ -1,0 +1,72 @@
+/*
+
+TABLE OF CONTENTS
+  1. Global Variables
+  2. Reset
+  3. Layout
+
+*/
+/* ############ 1. Global Variables ########### */
+:root {
+  /* Colors */
+  --color-primary: #67a328;
+  --color-secondary: #f6a500;
+  --color-grey: #969696;
+  --color-white: #ffffff;
+  /* Fonts */
+  --font-family-default: "Poppins", sans-serif;
+  --font-size-default: 1.6rem;
+}
+
+/* ############ 2. Reset ########### */
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  background-color: var(--color-grey);
+  color: var(--color-highlight-1);
+}
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: var(--font-family-default);
+}
+
+body {
+  min-height: 100vh;
+  height: 100%;
+  font-size: var(--font-size-default);
+  background-color: var(--color-white);
+  color: var(--color-highlight-2);
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+button,
+a {
+  font-family: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
