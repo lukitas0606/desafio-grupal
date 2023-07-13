@@ -1,13 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <title>Calculando Total</title>
   </head>
   <body>
-    <div class="product">
-      <img src="assets/imgs/msi-alpha-15.png" qlt="laptop" />
-    </div>
+    <main>
+      <div class="product">
+        <img src="assets/imgs/msi-alpha-15.png" alt="laptop" />
+        <h1>Laptop Gamer AMD</h1>
+        <form class="form__principla">
+          <input class="form__input" type="text" placeholder="Cantidad">
+          <input class="form__input" type="text" placeholder="Color">
+          <div>
+            <p>Precio: $40.000</p>
+          </div>
+        </form>
+        <button class="form__button" type="button">
+          Calcular Total
+        </button>
+      </div>
+      <!-- BEM -> Block -->
+      <section class="summary">
+        <ul class="summary__list">
+          <li class="summary__item">Total: $<span class="summary__price">0</span></li>
+          <li class="summary__item">Cantidad: <span class="summary__quantity">0</span></li>
+          <li class="summary__item">Color: <span class="summary__color"></span></li>
+        </ul>
+      </section>
+    </main>
   </body>
 </html>

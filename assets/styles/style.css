@@ -14,7 +14,7 @@ TABLE OF CONTENTS
   --color-grey: #969696;
   --color-white: #ffffff;
   /* Fonts */
-  --font-family-default: "Poppins", sans-serif;
+  --font-family-default: "Roboto", sans-serif;
   --font-size-default: 1.6rem;
 }
 
@@ -56,6 +56,42 @@ img {
   object-fit: cover;
 }
 
+.product{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--color-primary);
+  padding: 20px;
+  border: 1px solid black;
+
+}
+
+.form__button{
+  background-color: var(--color-secondary);
+}
+
+.form__input{
+  font-weight: 500;
+  font-size: var(--font-size-default);
+  color: rgb(28, 28, 30);
+  background-color: var();
+  border: none;
+  border-radius: 0.4vw;
+  padding: 0.4vw;
+  outline: none;
+  box-shadow: 0 0 .4vw rgba(0, 0, 0, 0.5), 0 0 0 .15vw transparent;
+  max-width: 190px;
+  transition: .9s;
+}
+
+.form__input:hover{
+  box-shadow: 0 0 0 .15vw var(--color-grey);
+}
+
+.form__input:focus{
+  box-shadow: 0 0 0 .15vw var(--color-secondary);
+}
+
 button,
 a {
   font-family: inherit;
@@ -69,4 +105,5 @@ a {
 
 li {
   list-style-type: none;
+  list-style: none;
 }
