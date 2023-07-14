@@ -6,32 +6,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/style.css">
     <title>Calculando Total</title>
   </head>
   <body>
-    <main>
-      <div class="product">
+    <main class="main">
+      <article class="card">
+      <section class="product">
         <img src="assets/imgs/msi-alpha-15.png" alt="laptop" />
         <h1>Laptop Gamer AMD</h1>
-        <form class="form__principla">
-          <input class="form__input" type="text" placeholder="Cantidad">
-          <input class="form__input" type="text" placeholder="Color">
-          <div>
-            <p>Precio: $40.000</p>
-          </div>
-        </form>
-        <button class="form__button" type="button">
-          Calcular Total
-        </button>
-      </div>
-      <!-- BEM -> Block -->
+        <form class="form__principal" id="form">
+          <input class="form__input" type="number" placeholder="Cantidad" id="cantidad" required>
+          <select class="form__input" id="color" required>
+            <option value="" selected disabled>Color</option>
+            <option value="black">Graphite black</option>
+            <option value="grey">Fortress grey</option>
+          </select>
+          <p>Precio: $40.000</p>
+          <button class="form__button" type="submit">
+            Calcular Total
+          </button>
+        </form> 
+      </section>
       <section class="summary">
         <ul class="summary__list">
-          <li class="summary__item">Total: $<span class="summary__price">0</span></li>
-          <li class="summary__item">Cantidad: <span class="summary__quantity">0</span></li>
-          <li class="summary__item">Color: <span class="summary__color"></span></li>
+          <li class="summary__item">Total: $<span id="summaryPrice">0</span></li>
+          <li class="summary__item">Cantidad: <span id="summaryQuantity">0</span></li>
+          <li class="summary__item">Color: <span id="summaryColor"></span></li>
         </ul>
       </section>
+    </article>
     </main>
+    <script src="./assets/scripts/script.js"></script>
   </body>
 </html>
